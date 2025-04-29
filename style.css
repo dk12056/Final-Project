@@ -16,6 +16,7 @@ body {
 .row {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .row__narrow {
@@ -47,8 +48,18 @@ p {
     line-height: 1.5;
 }
 
-section {
-    padding: 0 32px;
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+}
+
+#features .section__title,
+#pricing .section__title {
+    text-align: center;
 }
 
 main {
@@ -161,7 +172,7 @@ nav {
 }
 
 .nav__link--primary:hover {
-    background-color: rgb(34, 5, 92);
+    background-color: rgb(62, 47, 161);
 }
 
 
@@ -252,6 +263,8 @@ header .row {
 
 .header__description {
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__img--wrapper {
@@ -300,10 +313,14 @@ header .row {
     width: 160px;
     border: none;
     background-color: #6415ff;
-    color: #fff;
+    color: white;
     font-weight: 700;
     font-size: 16px;
     transition: all 300ms;
+}
+
+.header__email--btn:hover {
+    background-color: rgb(62, 47, 161);
 }
 
 .header__customers--title {
@@ -332,7 +349,6 @@ FEATURES ↓
 
 */
 
-
 #features {
     position: relative;
 }
@@ -343,6 +359,55 @@ FEATURES ↓
     align-items: center;
 }
 
+#features .section__para {
+    text-align: center;
+    max-width: 576px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;  
+}
+
+.feature {
+    width: calc(100% / 3);
+}
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.feature__img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #81848a;
+    border-radius: 300px;
+}
+
+.feature__text {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.feature__para {
+    margin-top: 16px;
+    font-size: 16px;
+    max-width: calc(634px / 3);
+    color: rgb(124, 139, 161);
+    line-height: 2;
+    font-weight: 500;
+    
+}
+
+
+
 
 /* 
 
@@ -350,6 +415,8 @@ QUALITY WORK ↓
 
 */
 
+#quality {
+}
 
 #quality .row {
     display: flex;
